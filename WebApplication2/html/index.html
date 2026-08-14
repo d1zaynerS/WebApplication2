@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Погода</title>
+</head>
+<body>
+    <h1>Пошук погоди</h1>
+
+    <form method="GET" action="/">
+        <input type="text" name="city" placeholder="Введіть назву міста" required />
+        <button type="submit">Шукати</button>
+    </form>
+    <br />
+
+    <p><strong>Популярні міста:</strong></p>
+    <p>
+        <a href="/?city=Kyiv">Київ</a> |
+        <a href="/?city=Odesa">Одеса</a> |
+        <a href="/?city=Lviv">Львів</a> |
+        <a href="/?city=London">Лондон</a>
+    </p>
+    <hr />
+
+    {{WEATHER}}
+</body>
+</html>
